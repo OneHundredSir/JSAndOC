@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ofQ-vc-nej">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--方式二-->
+        <scene sceneID="0tQ-Mr-58b">
+            <objects>
+                <navigationController id="ofQ-vc-nej" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="方式二" id="VtA-tV-DSW"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jRm-aL-1mx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kuE-UP-Lht" kind="relationship" relationship="rootViewController" id="vVT-V8-N8U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDi-Ha-0TO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="511"/>
+        </scene>
+        <!--JavaScriptCore方式-->
+        <scene sceneID="b7v-ic-nuw">
+            <objects>
+                <viewController id="kuE-UP-Lht" customClass="SeondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPh-aP-GAc"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJI-bf-OTg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iop-7V-qWX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQB-YT-Ouq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bQB-YT-Ouq" firstAttribute="leading" secondItem="Iop-7V-qWX" secondAttribute="leading" id="ESs-cr-Oa5"/>
+                            <constraint firstAttribute="bottom" secondItem="bQB-YT-Ouq" secondAttribute="bottom" id="OG9-GL-sZR"/>
+                            <constraint firstAttribute="trailing" secondItem="bQB-YT-Ouq" secondAttribute="trailing" id="eMS-tO-Siv"/>
+                            <constraint firstItem="bQB-YT-Ouq" firstAttribute="top" secondItem="Iop-7V-qWX" secondAttribute="top" id="h60-HM-NIy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="JavaScriptCore方式" id="kAq-0h-pLk"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="webView" destination="bQB-YT-Ouq" id="qgq-Sx-385"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAq-xj-xNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="506"/>
+        </scene>
+    </scenes>
+</document>
